@@ -1,13 +1,10 @@
-// LNP/BP client-side-validation foundation libraries implementing LNPBP
-// specifications & standards (LNPBP-4, 7, 8, 9, 42, 81)
+// Helper functions for creating encoding derivation macros.
 //
-// Written in 2019-2022 by
-//     Dr. Maxim Orlovsky <orlovsky@pandoracore.com>
+// Written in 2019-2023 by
+//     Dr. Maxim Orlovsky <orlovsky@protonmail.ch>
 //
-// To the extent possible under law, the author(s) have dedicated all
-// copyright and related and neighboring rights to this software to
-// the public domain worldwide. This software is distributed without
-// any warranty.
+// This software is distributed according to the principle AS IS without any
+// warranty.
 //
 // You should have received a copy of the Apache 2.0 License along with this
 // software. If not, see <https://opensource.org/licenses/Apache-2.0>.
@@ -48,8 +45,8 @@ fn test_custom_derivation() {
             "custom_encoding",
             ident!(custom_encoding),
             ident!(CustomDecode),
-            ident!(custom_encode),
-            ident!(custom_serialize),
+            ident!(custom_decode),
+            ident!(custom_deserialize),
             derive_input,
             true,
         )

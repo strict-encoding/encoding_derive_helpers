@@ -1,16 +1,16 @@
 [package]
 name = "encoding_derive_helpers"
-version = "2.0.0-alpha.2"
+version = "2.0.0-beta.1"
 license = "Apache-2.0"
-authors = ["Dr. Maxim Orlovsky <orlovsky@lnp-bp.org>"]
+authors = ["Dr. Maxim Orlovsky <orlovsky@protonmail.ch>"]
 description = "Helper functions for creating different encoding derivation macros"
-repository = "https://github.com/LNP-BP/client_side_validation"
-homepage = "https://github.com/LNP-BP"
-keywords = ["lnp-bp", "strict-encoding", "networking", "internet2", "proc-macro"]
-categories = ["encoding", "parsing"]
+repository = "https://github.com/strict-encoding/encoding_derive_helpers"
+homepage = "https://strict-encoding.org"
+keywords = ["strict-encoding", "networking", "proc-macro"]
+categories = ["development-tools::procedural-macro-helpers", "encoding", "parsing"]
 readme = "../README.md"
 edition = "2021"
-rust-version = "1.59.0"
+rust-version = "1.60.0"
 
 [lib]
 
@@ -18,4 +18,4 @@ rust-version = "1.59.0"
 quote = "1"
 syn = "1"
 proc-macro2 = "1"
-amplify = { version = "3.13.0", features = [ "proc_attr" ] }
+amplify = { version = "4.0.0-beta.6", features = [ "proc_attr" ] }
