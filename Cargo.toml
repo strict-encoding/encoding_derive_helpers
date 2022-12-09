@@ -19,3 +19,7 @@ quote = "1"
 syn = "1"
 proc-macro2 = "1"
 amplify = { version = "4.0.0-beta.6", features = [ "proc_attr" ] }
+
+[workspace]
+default-members = ["."]
+members = [".", "derive_test"]
